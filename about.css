@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Overpass:wght@300&family=Rammetto+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("images/cover4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+    width: 520px;
+    margin-left: 65%;
+}
+
+.glass {
+    border: 2px solid white;
+    padding: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 1200px;
+    height: 2230px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    background: linear-gradient(100deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
+    box-shadow: 0 10px 26px 0 rgba(25, 25, 30, .50)
+}
+
+h1 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 40pt;
+    color: white;
+    letter-spacing: 20px;
+    text-align: center;
+    font-weight: 0%;
+    margin-top: 0%;
+    padding: 0%;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30pt;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+}
+

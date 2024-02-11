@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Overpass:wght@300&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Overpass:wght@300&family=Rammetto+One&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Overpass:wght@300&family=Raleway:wght@300&family=Rammetto+One&family=Ubuntu&display=swap');
+
+html {
+	scroll-behavior: smooth;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+	display: grid;
+	place-items: center;
+	color: white;
+	margin-bottom: 10%;
+}
+
+h1 {
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-family: 'Rammetto One', cursive;
+	font-size: 70px;
+	font-weight: 100;
+	letter-spacing: 15px;
+}
+
+h2 {
+	font-size: 40px;
+	padding: 2%;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 5%;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 4px;
+	text-align: center;
+	align-items: center;
+	width: 20%;
+	height: auto;
+	border: 0px solid #ddd;
+	border-radius: 20px;
+}
+
+img:hover {
+	box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}

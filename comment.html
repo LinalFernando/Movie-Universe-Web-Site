@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="comment.css">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        color: white;
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #feedback {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: xxx-large;
+
+        color: white;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 200px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #850f0f;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0d47a1;
+        transition: 0.4s;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="feedback">
+        <hr size="2" color="white">
+        <h1>FEEDBACK AREA</h1>
+        <hr size="2" color="white">
+        <br><br>
+        <form @submit.prevent="addComment">
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" v-model="newFeedback.name" required>
+            <br><br>
+            <label for="comment">Give your Feedback:</label>
+            <textarea id="comment" v-model="newFeedback.comment" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        
+        <ul>
+            <li v-for="comment in comments">
+                <b>{{ comment.name }}</b>: {{ comment.comment }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@2.6.11"></script>
+    <script src="comment.js"></script>
+</body>
+
+</html>

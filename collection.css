@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Overpass:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 45pt;
+    margin-top: 20px;
+    font-family: 'Poppins', cursive;
+    letter-spacing: 15px;
+    padding: 20px;
+}
+
+body {
+    background: fixed;
+    background-image: url("images/cover.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #eee;
+    text-align: center;
+    max-width: auto;
+}
+
+nav {
+    background-color: #5e1515b6;
+    max-width: 700px;
+    border: solid #33333300;
+    border-radius: 50px;
+    position: sticky;
+    top: 0.5%;
+    padding: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    transition: 1.0s;
+    border-radius: 50px;
+}
+
+nav ul li a:hover {
+    background-color: #ffffffb4;
+    color: #333;
+    border: solid #33333300;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+main {
+    display: grid;
+    max-width: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 80px;
+    margin-top: 20px;
+}
+
+
+.movie {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff2d;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.movie img {
+    border: 3px solid white;
+    border-radius: 2em;
+    box-shadow: 0px 0px 50px -1px #00000054;
+
+    margin-top: 40px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.movie h2 {
+    margin: 10px;
+}
+
+.movie p {
+    margin: 5px 10px;
+}
+
+.movie a {
+    font-weight: bolder;
+    display: block;
+    background-color: #ca0000be;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.movie a:hover {
+    background-color: #ffe600af;
+    color: #0004ff;
+}
+
+footer {
+    background-color: #ffffff5d;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
